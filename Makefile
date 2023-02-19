@@ -457,3 +457,10 @@ distclean: clean
 	echo -n 'Deleting *.bin, *.hex, and *.uf2 ... '
 	rm -f *.bin *.hex *.uf2
 	echo 'done.'
+
+
+compile:
+	qmk compile -kb lily58 -km mylily58
+
+flash:
+	qmk flash -kb lily58 -km mylily58
